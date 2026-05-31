@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>静岡県・伊豆東海岸 高級ヴィラ リサーチレポート｜2026年7月25日宿泊</title>
+<style>
+:root {
+  --c-bg: #f7f5f0;
+  --c-paper: #ffffff;
+  --c-ink: #1a1a1a;
+  --c-sub: #5a5a5a;
+  --c-line: #e5e0d6;
+  --c-gold: #b08d57;
+  --c-deep: #2a3a4a;
+  --c-warn: #b54a36;
+  --c-ok: #2e7d4f;
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0; padding: 0;
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  background: var(--c-bg);
+  color: var(--c-ink);
+  line-height: 1.75;
+  font-size: 15px;
+}
+.wrapper { max-width: 980px; margin: 0 auto; padding: 40px 24px 80px; }
+header.cover {
+  background: linear-gradient(135deg, #2a3a4a 0%, #3d5266 100%);
+  color: #fff;
+  padding: 56px 40px;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+header.cover .eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.4em;
+  color: var(--c-gold);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-family: "Helvetica Neue", sans-serif;
+}
+header.cover h1 {
+  font-size: 30px;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+  font-weight: 600;
+}
+header.cover .subtitle {
+  font-size: 14px;
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 24px;
+}
+header.cover .meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.15);
+}
+header.cover .meta dt { font-size: 10px; letter-spacing: 0.2em; color: rgba(255,255,255,0.6); margin-bottom: 4px; }
+header.cover .meta dd { margin: 0; font-size: 14px; color: #fff; }
+
+section {
+  background: var(--c-paper);
+  padding: 40px 44px;
+  margin-bottom: 24px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+h2 {
+  font-size: 22px;
+  margin: 0 0 8px 0;
+  color: var(--c-deep);
+  border-left: 4px solid var(--c-gold);
+  padding-left: 14px;
+}
+h2 .num {
+  display: inline-block;
+  color: var(--c-gold);
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+.section-lead {
+  color: var(--c-sub);
+  font-size: 13px;
+  margin: 6px 0 28px 18px;
+}
+h3 {
+  font-size: 17px;
+  color: var(--c-deep);
+  margin: 32px 0 12px 0;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--c-line);
+}
+h3 .badge {
+  display: inline-block;
+  background: var(--c-gold);
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  padding: 2px 8px;
+  margin-right: 8px;
+  vertical-align: middle;
+  border-radius: 2px;
+  font-family: "Helvetica Neue", sans-serif;
+}
+.alert {
+  background: #fff8e6;
+  border-left: 3px solid var(--c-warn);
+  padding: 14px 18px;
+  margin: 16px 0;
+  font-size: 13px;
+  color: #5a3a1a;
+}
+.alert strong { color: var(--c-warn); }
+.note {
+  background: #f0f4f7;
+  border-left: 3px solid var(--c-deep);
+  padding: 14px 18px;
+  margin: 16px 0;
+  font-size: 13px;
+}
+.villa-card {
+  background: #fcfaf6;
+  border: 1px solid var(--c-line);
+  padding: 24px 28px;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+.villa-card.top {
+  background: linear-gradient(180deg, #fdf6e8 0%, #fcfaf6 100%);
+  border: 1px solid var(--c-gold);
+}
+.villa-card h4 {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  color: var(--c-deep);
+}
+.villa-card h4 .rank {
+  background: var(--c-gold);
+  color: #fff;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  padding: 3px 9px;
+  border-radius: 2px;
+  margin-right: 10px;
+  letter-spacing: 0.05em;
+}
+.villa-card dl {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 6px 16px;
+  margin: 12px 0 0 0;
+  font-size: 13px;
+}
+.villa-card dt {
+  color: var(--c-sub);
+  font-size: 12px;
+  padding-top: 2px;
+}
+.villa-card dd { margin: 0; color: var(--c-ink); }
+.villa-card a { color: var(--c-deep); text-decoration: underline; word-break: break-all; }
+.villa-card a:hover { color: var(--c-gold); }
+.tag {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 8px;
+  margin: 2px 4px 2px 0;
+  border-radius: 2px;
+  background: #ede6d4;
+  color: #5a4a2a;
+  font-family: "Helvetica Neue", sans-serif;
+}
+.tag.unconfirmed { background: #f5e0db; color: var(--c-warn); }
+.tag.confirmed { background: #e0f0e5; color: var(--c-ok); }
+.tag.deal { background: var(--c-deep); color: #fff; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 13px;
+}
+th, td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--c-line);
+  vertical-align: top;
+}
+th {
+  background: #f5f1e8;
+  color: var(--c-deep);
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+.rank-table th:first-child, .rank-table td:first-child { width: 40px; text-align: center; color: var(--c-gold); font-family: "Helvetica Neue", sans-serif; font-weight: 600; }
+
+.excluded {
+  background: #faf6f4;
+  border-left: 3px solid var(--c-warn);
+}
+.excluded td:first-child { color: var(--c-warn); }
+
+.package-card {
+  background: #fcfaf6;
+  border: 1px solid var(--c-line);
+  padding: 20px 24px;
+  margin: 16px 0;
+  border-radius: 4px;
+}
+.package-card h4 {
+  margin: 0 0 8px 0;
+  color: var(--c-deep);
+  font-size: 16px;
+}
+.package-card .total {
+  display: inline-block;
+  background: var(--c-gold);
+  color: #fff;
+  padding: 4px 12px;
+  font-size: 13px;
+  margin-top: 8px;
+  font-family: "Helvetica Neue", sans-serif;
+  border-radius: 2px;
+}
+.package-card.target .total { background: var(--c-deep); }
+
+.line-box {
+  background: #06c755;
+  color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+.line-box-inner {
+  background: #fff;
+  color: var(--c-ink);
+  padding: 18px 20px;
+  border-radius: 4px;
+  font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-size: 13px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+.next-steps ol { padding-left: 22px; }
+.next-steps li { margin-bottom: 10px; }
+
+footer {
+  margin-top: 40px;
+  padding: 24px;
+  text-align: center;
+  color: var(--c-sub);
+  font-size: 11px;
+  border-top: 1px solid var(--c-line);
+}
+
+@media print {
+  body { background: #fff; }
+  section { box-shadow: none; page-break-inside: avoid; }
+  header.cover { background: #2a3a4a !important; -webkit-print-color-adjust: exact; }
+}
+@media (max-width: 640px) {
+  .wrapper { padding: 20px 12px; }
+  section { padding: 24px 18px; }
+  header.cover { padding: 36px 20px; }
+  header.cover h1 { font-size: 22px; }
+  .villa-card { padding: 18px 16px; }
+  .villa-card dl { grid-template-columns: 1fr; gap: 2px 0; }
+  .villa-card dt { padding-top: 8px; font-weight: 600; }
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+<header class="cover">
+  <div class="eyebrow">PRIVATE TRAVEL RESEARCH</div>
+  <h1>静岡県・伊豆東海岸<br>高級ヴィラ リサーチレポート</h1>
+  <div class="subtitle">大人7名＋幼児1名＋犬2匹／1泊総額200万円帯／出張シェフ手配前提</div>
+  <dl class="meta">
+    <div><dt>STAY DATE</dt><dd>2026年7月25日(土) – 26日(日)</dd></div>
+    <div><dt>GUESTS</dt><dd>大人7名・幼児1名・犬2匹</dd></div>
+    <div><dt>AREA</dt><dd>静岡県 伊豆東海岸</dd></div>
+    <div><dt>BUDGET</dt><dd>1泊総額 200万円帯（理想）</dd></div>
+    <div><dt>ISSUED</dt><dd>2026年5月31日</dd></div>
+  </dl>
+</header>
+
+<section>
+<h2><span class="num">00</span>エグゼクティブサマリー</h2>
+<p class="section-lead">本日の一次情報リサーチで確認できた事実と、200万円ライン到達のための構成設計。</p>
+
+<div class="alert">
+<strong>重要な事実発見：</strong>公式・予約サイト一次情報で実在確認できた伊豆東海岸のペット可一棟貸しヴィラのうち、<strong>1棟単体で1泊200万円を超える物件は確認できませんでした</strong>。最高グレード帯でも単体は30〜50万円。<strong>200万円ライン到達は「複数棟貸切」「出張シェフ豪華プラン」「ヘリ送迎」などを組み合わせるパッケージ構成</strong>で実現する必要があります。
+</div>
+
+<h3>確認できたこと</h3>
+<ul>
+<li>伊豆東海岸（熱海・伊東・伊豆高原・河津）で<strong>犬2匹（中型可）・8名定員・温泉/サウナ/プール級設備</strong>を満たすハイエンド一棟貸しは <strong>9件</strong> 実在確認</li>
+<li>その筆頭は <strong>海彩テラス熱海別邸</strong>（1日1組／温泉＋サウナ＋プール＋ジャグジー全装備／大型犬3頭OK／公式の出張シェフ提携プラン存在）</li>
+<li>出張シェフは <strong>シェフくる</strong>・<strong>SHAREDINE</strong>・<strong>PRIME CHEF</strong> 等が候補。海彩テラス公式提携が最も摩擦少</li>
+<li>NOT A HOTELは伊豆東海岸<strong>未展開</strong>（湯河原＝神奈川予定）。月と太陽 BASE ATAMI／ATAMI Ocean Villa Retreatは<strong>小型犬のみ</strong>で対象外</li>
+</ul>
+
+<h3>未確認のこと（要直接照会）</h3>
+<ul>
+<li>全施設の <strong>2026/7/25(土)の空室・実勢料金</strong>（めりーのおうちのみ空室○表記確認）</li>
+<li>全施設の <strong>レビュー件数・評価値</strong>（各予約サイトで要直接閲覧）</li>
+<li>犬2匹の <strong>正確なサイズ／同伴細則の最終確認</strong></li>
+</ul>
+</section>
+
+<section>
+<h2><span class="num">01</span>本命候補：ハイエンド一棟貸し</h2>
+<p class="section-lead">公式サイト or 一休/楽天/じゃらん等の予約サイトで実在を確認した施設のみ掲載。</p>
+
+<div class="villa-card top">
+<h4><span class="rank">1位</span>海彩テラス熱海別邸（Umiiro Terrace Atami Bessitei）</h4>
+<p style="margin:8px 0;color:var(--c-sub);font-size:13px;">熱海／1日1組限定／温泉＋フィンランドサウナ＋14m×4mプール＋温水ジャグジー＋ドッグラン＋オーシャンビュー</p>
+<dl>
+<dt>エリア</dt><dd>熱海</dd>
+<dt>収容人数</dt><dd>寝室2室（クイーン2台＋シングル2台、間仕切り可）＋和室小部屋＋2階14帖和室広間。エキストラベッド2台・ソファーベッド1台追加可。<span class="tag unconfirmed">具体定員 要確認</span></dd>
+<dt>ペット対応</dt><dd>大型犬3頭／中型犬5頭／小型犬10頭まで可。大型5,500円・中型3,300円・小型2,200円/匹 <span class="tag confirmed">確認済</span></dd>
+<dt>設備</dt><dd><span class="tag">天然温泉</span><span class="tag">フィンランドサウナ</span><span class="tag">14m×4mプール</span><span class="tag">温水ジャグジー</span><span class="tag">BBQ</span><span class="tag">ドッグラン</span><span class="tag">オーシャンビュー</span></dd>
+<dt>食事</dt><dd>素泊まり。<strong>公式の出張シェフプラン提供あり</strong>（専用ページ存在）</dd>
+<dt>料金</dt><dd><span class="tag unconfirmed">料金未確認・要見積</span></dd>
+<dt>2026/7/25空室</dt><dd><span class="tag unconfirmed">未確認</span></dd>
+<dt>公式</dt><dd><a href="https://umiiro-terrace.net/20230921152517/">https://umiiro-terrace.net/20230921152517/</a></dd>
+<dt>予約</dt><dd><a href="https://reserve.489ban.net/client/umiiro-terrace/0/plan/availability/room">公式予約システム</a> ／ <a href="https://www.ikyu.com/en-us/00051764/">一休</a></dd>
+</dl>
+</div>
+
+<div class="villa-card top">
+<h4><span class="rank">2位</span>AMAO VILLA 伊豆高原</h4>
+<p style="margin:8px 0;color:var(--c-sub);font-size:13px;">伊豆高原／犬制限なし／300坪ドッグラン／温泉露天／120インチホームシアター</p>
+<dl>
+<dt>エリア</dt><dd>伊豆高原（伊東市）</dd>
+<dt>収容人数</dt><dd>12名（Queen 1台 ＋ Double 1台 ＋ Single 3台 ＋ 布団5組） <span class="tag confirmed">確認済</span></dd>
+<dt>ペット対応</dt><dd>犬頭数制限なし／2匹まで無料／3匹目以降4,000円/泊 <span class="tag confirmed">確認済</span></dd>
+<dt>設備</dt><dd><span class="tag">温泉露天</span><span class="tag">300坪ドッグラン</span><span class="tag">BBQテラス</span><span class="tag">120インチシアター</span></dd>
+<dt>料金</dt><dd>目安 94,500円〜 <span class="tag unconfirmed">7/25実勢未確認</span></dd>
+<dt>2026/7/25空室</dt><dd><span class="tag unconfirmed">未確認</span></dd>
+<dt>公式</dt><dd><a href="https://www.amaovilla.com/amao-villa-izukogen/">https://www.amaovilla.com/amao-villa-izukogen/</a></dd>
+<dt>予約</dt><dd><a href="https://www.ikyu.com/en-us/00051604/">一休</a> ／ <a href="https://travel.rakuten.co.jp/HOTEL/187204/187204.html">楽天</a> ／ <a href="https://www.jalan.net/yad322841/">じゃらん</a></dd>
+</dl>
+</div>
+
+<div class="villa-card top">
+<h4><span class="rank">3位</span>めりーのおうち</h4>
+<p style="margin:8px 0;color:var(--c-sub);font-size:13px;">城ヶ崎海岸／<strong>2026/7/25 空室○表記確認</strong>／温泉露天／屋根付BBQ（雨対策）</p>
+<dl>
+<dt>エリア</dt><dd>伊豆高原・城ヶ崎海岸（伊東市富戸920-24）</dd>
+<dt>収容人数</dt><dd>11名（3LDK＋和室） <span class="tag confirmed">確認済</span></dd>
+<dt>ペット対応</dt><dd>犬2匹まで無料／3匹目以降4,000円/泊 <span class="tag confirmed">確認済</span></dd>
+<dt>設備</dt><dd><span class="tag">温泉露天</span><span class="tag">ドッグラン</span><span class="tag">屋根付BBQ</span><span class="tag">薪ストーブ</span><span class="tag">120インチシアター</span></dd>
+<dt>料金</dt><dd><span class="tag unconfirmed">7/25実勢未確認</span></dd>
+<dt>2026/7/25空室</dt><dd><span class="tag confirmed">○表記確認</span>（じゃらん・楽天で確認）</dd>
+<dt>公式</dt><dd><a href="https://morinoouchi-resort.com/">https://morinoouchi-resort.com/</a></dd>
+<dt>予約</dt><dd><a href="https://www.jalan.net/yad378175/">じゃらん</a> ／ <a href="https://travel.rakuten.co.jp/HOTEL/183384/">楽天</a></dd>
+</dl>
+</div>
+
+<div class="villa-card">
+<h4><span class="rank">4位</span>AMAO VILLA 城ヶ崎</h4>
+<dl>
+<dt>エリア</dt><dd>伊豆高原・城ヶ崎（伊東市）</dd>
+<dt>収容人数</dt><dd>11名 <span class="tag confirmed">確認済</span></dd>
+<dt>ペット対応</dt><dd>犬頭数制限なし <span class="tag confirmed">確認済</span></dd>
+<dt>設備</dt><dd><span class="tag">天然温泉(岩風呂)</span><span class="tag">100坪ドッグラン</span><span class="tag">BBQ</span><span class="tag">120インチシアター</span></dd>
+<dt>料金</dt><dd><span class="tag unconfirmed">未確認</span></dd>
+<dt>公式</dt><dd><a href="https://www.amaovilla.com/amao-villa-jogasaki/">https://www.amaovilla.com/amao-villa-jogasaki/</a></dd>
+</dl>
+</div>
+
+<div class="villa-card">
+<h4><span class="rank">5位</span>ホテル四季の蔵 別邸ULALA</h4>
+<dl>
+<dt>エリア</dt><dd>河津町（峰）</dd>
+<dt>収容人数</dt><dd>別邸ULALA 2〜6名（212㎡）。<strong>8名利用は他棟（COCORO 7名／AZITO等）併用が必要</strong></dd>
+<dt>ペット対応</dt><dd>全室で犬同伴可／ドッグスパ・ドッグランあり <span class="tag confirmed">確認済</span></dd>
+<dt>設備</dt><dd><span class="tag">各邸温泉露天</span><span class="tag">インフィニティプール(ULALA)</span><span class="tag">オーシャンビュー</span><span class="tag">ドッグスパ</span><span class="tag">テラス65㎡ドッグラン</span></dd>
+<dt>料金</dt><dd>COCORO目安 62,436円〜（朝食付2名）</dd>
+<dt>公式</dt><dd><a href="https://shikinokura.com/villa/">https://shikinokura.com/villa/</a></dd>
+<dt>予約</dt><dd><a href="https://www.ikyu.com/en-us/00030584/">一休</a> ／ <a href="https://www.jalan.net/yad329683/">じゃらん</a></dd>
+</dl>
+</div>
+
+<div class="villa-card">
+<h4><span class="rank">6位</span>風と森と空のヴィラ ブレス熱海 アネックス</h4>
+<dl>
+<dt>エリア</dt><dd>熱海</dd>
+<dt>収容人数</dt><dd>5LDK＋多目的ホール（具体定員 <span class="tag unconfirmed">未確認</span>）</dd>
+<dt>オープン</dt><dd><strong>2025年12月オープン予定（築浅・希少性高）</strong></dd>
+<dt>ペット対応</dt><dd>可（詳細<span class="tag unconfirmed">未確認</span>）</dd>
+<dt>設備</dt><dd><span class="tag">露天風呂</span><span class="tag">サウナ</span><span class="tag">ハンモック付露天</span><span class="tag">BBQ</span><span class="tag">プロジェクター</span></dd>
+<dt>特徴</dt><dd>建築家監修デザイナーズ／1日1組限定</dd>
+<dt>公式</dt><dd><a href="https://www.stagevilla.co.jp/villa/12484">ステージヴィラ</a> ／ <a href="https://www.aco.co.jp/id/67692.html">ACO</a></dd>
+</dl>
+</div>
+
+<div class="villa-card">
+<h4><span class="rank">7位</span>niko Villa LUCE＋Woody 両棟貸切</h4>
+<dl>
+<dt>エリア</dt><dd>伊豆高原（伊東市八幡野1277-3）</dd>
+<dt>収容人数</dt><dd>LUCE 13名 ＋ Woody 8名 = <strong>合計21名</strong></dd>
+<dt>ペット対応</dt><dd>可。情報源で矛盾記載あり <span class="tag unconfirmed">要直接確認</span></dd>
+<dt>設備</dt><dd><span class="tag">オーシャンビュー(伊豆大島・大室山)</span><span class="tag">ジャグジー</span><span class="tag">BBQ</span><span class="tag">ドッグラン</span></dd>
+<dt>料金</dt><dd>公式9,000円〜表示、両棟貸切時は <span class="tag unconfirmed">未確認</span></dd>
+<dt>留意</dt><dd>21名は8名に過大。複数家族で1棟ずつ分けて使う構成も可</dd>
+<dt>公式</dt><dd><a href="https://www.stagevilla.co.jp/villa/10686">https://www.stagevilla.co.jp/villa/10686</a></dd>
+</dl>
+</div>
+
+<div class="villa-card">
+<h4><span class="rank">8位</span>熱海レオ（Atami Leo）</h4>
+<dl>
+<dt>エリア</dt><dd>熱海</dd>
+<dt>収容人数</dt><dd>16名</dd>
+<dt>ペット対応</dt><dd>可（詳細頭数・サイズ <span class="tag unconfirmed">未確認</span>）</dd>
+<dt>設備</dt><dd><span class="tag">5LDK 3階建+展望天体観測ルーム</span><span class="tag">独立サウナ棟(サウナ＋水風呂＋大浴槽＋ととのいスペース)</span><span class="tag">BBQ</span><span class="tag">オーシャンビュー</span></dd>
+<dt>料金</dt><dd>平日 6,500〜7,000円/名 ＋ 諸経費1,100円</dd>
+<dt>留意</dt><dd>16名は8名利用にやや過大（減点要素）</dd>
+<dt>公式</dt><dd><a href="https://atami-leo.jimdofree.com/">公式</a> ／ <a href="https://www.stagevilla.co.jp/villa/1606">ステージヴィラ</a></dd>
+</dl>
+</div>
+
+<div class="villa-card">
+<h4><span class="rank">9位</span>伊豆高原プライム（リソルステイ）</h4>
+<dl>
+<dt>エリア</dt><dd>伊豆高原（伊東市富戸1012-100）</dd>
+<dt>収容人数</dt><dd>8名（3LDK）<span class="tag confirmed">ジャストサイズ</span></dd>
+<dt>ペット対応</dt><dd>犬2匹までOK（サイズ制限なしと記載）</dd>
+<dt>設備</dt><dd><span class="tag">温泉</span><span class="tag">BBQ可</span><span class="tag">75インチTV</span><span class="tag">洗濯機・乾燥機</span></dd>
+<dt>料金</dt><dd>38,900円〜（リソルステイ会員）</dd>
+<dt>公式</dt><dd><a href="https://www.resolstay.jp/details/v_izukougen/">https://www.resolstay.jp/details/v_izukougen/</a></dd>
+</dl>
+</div>
+</section>
+
+<section>
+<h2><span class="num">02</span>除外／減点が確定した施設</h2>
+<p class="section-lead">条件不適合が公式情報で確認できた施設。誤って候補に含まないよう列挙。</p>
+<table>
+<thead><tr><th>施設</th><th>除外／減点理由</th></tr></thead>
+<tbody>
+<tr class="excluded"><td>月と太陽 BASE ATAMI</td><td><strong>小型犬のみ可</strong>。中型犬2匹要件に不適合</td></tr>
+<tr class="excluded"><td>ATAMI Ocean Villa Retreat</td><td>小型犬1匹のみ／定員6名（8名不可）</td></tr>
+<tr class="excluded"><td>エンゼルフォレスト熱海自然郷 貸別荘</td><td><strong>2025/7/27営業休止</strong>。2026/7/25対象外</td></tr>
+<tr class="excluded"><td>Villa Revolla（牧之原）</td><td>ペット不可</td></tr>
+<tr class="excluded"><td>藤乃煌（御殿場）</td><td>全キャビン2〜3名定員。8名一棟不可</td></tr>
+<tr class="excluded"><td>NOT A HOTEL</td><td>静岡東海岸<strong>未展開</strong>（湯河原＝神奈川予定）</td></tr>
+<tr class="excluded"><td>パールヒルズ熱海（40名）／熱海スカイⅡ（25名）</td><td>定員過大。ハイエンド層の希少性・隠れ家性に不適合</td></tr>
+</tbody>
+</table>
+</section>
+
+<section>
+<h2><span class="num">03</span>出張シェフサービス</h2>
+<p class="section-lead">食事は宿に付帯せず、出張シェフ手配前提という方針を踏まえて。</p>
+
+<div class="villa-card">
+<h4>海彩テラス熱海別邸 提携プラン <span class="tag deal">摩擦最小</span></h4>
+<p>公式サイトに「出張シェフプラン」専用ページあり。施設専属の段取りで手配可能 → <strong>調整工数が最も少ない</strong></p>
+</div>
+
+<div class="villa-card">
+<h4>シェフくる</h4>
+<dl>
+<dt>公式</dt><dd><a href="https://chefkuru.jp/">https://chefkuru.jp/</a></dd>
+<dt>対応エリア</dt><dd>関東・関西・中部・九州拡大中。熱海・伊豆は「隣町扱い／シェフによっては対応可」、要個別問合せ</dd>
+<dt>料金目安</dt><dd>1名 8,000〜16,000円</dd>
+<dt>問合せ</dt><dd>050-3580-7366 ／ support@chefkuru.jp</dd>
+</dl>
+</div>
+
+<div class="villa-card">
+<h4>SHAREDINE（熱海市）</h4>
+<dl>
+<dt>公式</dt><dd><a href="https://sharedine.me/shizuoka/atamishi">https://sharedine.me/shizuoka/atamishi</a></dd>
+<dt>登録シェフ</dt><dd>熱海市対応シェフ16名以上</dd>
+<dt>料金詳細</dt><dd><span class="tag unconfirmed">未確認・要サイト直接閲覧</span></dd>
+</dl>
+</div>
+
+<div class="villa-card">
+<h4>PRIME CHEF / MyChef / くらしのマーケット</h4>
+<dl>
+<dt>PRIME CHEF 公式</dt><dd><a href="https://www.primechef.cooking/">https://www.primechef.cooking/</a></dd>
+<dt>MyChef 公式</dt><dd><a href="https://mychef.jp/chefs.html">https://mychef.jp/chefs.html</a></dd>
+<dt>くらしのマーケット</dt><dd><a href="https://curama.jp/chef/">https://curama.jp/chef/</a></dd>
+<dt>対応エリア・料金</dt><dd>個別シェフごと <span class="tag unconfirmed">要見積</span></dd>
+</dl>
+</div>
+</section>
+
+<section>
+<h2><span class="num">04</span>200万円ライン到達パッケージ案</h2>
+<p class="section-lead">単一ヴィラでは200万円に届かないため、複数要素を組み合わせる構成設計。</p>
+
+<div class="package-card">
+<h4>α案：海彩テラス熱海別邸 ＋ 究極シェフ</h4>
+<p>海彩テラス1棟貸切（30万円帯想定）＋ プライベートシェフフルコース（25万円）＋ プレミアムワイン・特別演出（30万円）＋ 専用車送迎・薪火・花火等オプション</p>
+<span class="total">想定 85〜120万円</span>
+</div>
+
+<div class="package-card">
+<h4>β案：AMAO VILLA 2棟貸切 ＋ シェフ</h4>
+<p>AMAO VILLA 伊豆高原（11.3万〜）＋ AMAO VILLA 城ヶ崎（未確認）＋ シェフ両棟出張</p>
+<span class="total">想定 35〜80万円</span>
+</div>
+
+<div class="package-card">
+<h4>γ案：ISOLA全棟貸切 ＋ シェフ ＋ プレ演出</h4>
+<p>ISOLA全棟（45万円〜）＋ シェフ40名規模ディナー（50万円）＋ サプライズ演出</p>
+<span class="total">想定 120〜180万円</span>
+</div>
+
+<div class="package-card target">
+<h4>δ案：海彩テラス ＋ ヘリチャーター送迎 ＋ シェフ ★200万円ライン到達想定</h4>
+<p>ヘリチャーター名古屋⇄熱海（往復100万円超）＋ 海彩テラス1棟貸切 ＋ プライベートシェフフルコース</p>
+<span class="total">想定 200万円ライン到達可能性高</span>
+</div>
+
+<div class="note">
+<strong>所感：</strong>ヘリ送迎を組み込まない場合、200万円までは「シェフ単独でフルコース＋プレミアムワイン＋特別演出」を厚く積む形（40〜80万円帯）になります。最もエレガントな打ち手は <strong>海彩テラス＋海彩提携シェフのフルコース＋名古屋からの専用車（運転手付ハイヤー往復）＋プレミアムワインセラー手配</strong>。これで100〜130万円帯まで到達でき、希少性が伝わります。
+</div>
+</section>
+
+<section>
+<h2><span class="num">05</span>ランキング</h2>
+
+<h3><span class="badge">①</span>総額料金ランキング TOP10</h3>
+<p style="font-size:13px;color:var(--c-sub);">大半が「料金未確認」のため、確認できた料金目安と価格レンジ想定で列挙</p>
+<table class="rank-table">
+<thead><tr><th>順位</th><th>施設</th><th>料金根拠</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>ISOLA伊豆高原 全棟貸切</td><td>平日30万〜・休日45万〜</td></tr>
+<tr><td>2</td><td>niko Villa LUCE＋Woody両棟</td><td>未確認、レンジ20〜40万円想定</td></tr>
+<tr><td>3</td><td>海彩テラス熱海別邸</td><td>未確認、プール付ハイエンドのため20〜40万円帯想定</td></tr>
+<tr><td>4</td><td>ブレス熱海アネックス</td><td>未確認、新築デザイナーズ</td></tr>
+<tr><td>5</td><td>熱海レオ</td><td>16名×6,500〜7,000円 = 10.4〜11.2万円＋諸経費</td></tr>
+<tr><td>6</td><td>AMAO VILLA 伊豆高原</td><td>目安94,500円〜</td></tr>
+<tr><td>7</td><td>AMAO VILLA 城ヶ崎</td><td>料金未確認</td></tr>
+<tr><td>8</td><td>めりーのおうち</td><td>料金未確認</td></tr>
+<tr><td>9</td><td>ホテル四季の蔵 別邸ULALA</td><td>COCORO 62,436円〜（朝食付2名）</td></tr>
+<tr><td>10</td><td>伊豆高原プライム</td><td>38,900円〜</td></tr>
+</tbody>
+</table>
+
+<h3><span class="badge">②</span>レビューランキング TOP10</h3>
+<div class="alert">
+全施設の<strong>レビュー件数・評価値は本リサーチでは未取得</strong>。本ランキングは順位確定不可。各予約サイト（一休／楽天／じゃらん）で直接確認推奨。
+</div>
+
+<h3><span class="badge">③</span>実質高級ランキング TOP10（最重要）</h3>
+<p style="font-size:13px;color:var(--c-sub);">定員適合度・設備・希少性・プライバシー・犬対応の柔軟性を総合評価</p>
+<table class="rank-table">
+<thead><tr><th>順位</th><th>施設</th><th>評価ポイント</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>海彩テラス熱海別邸</td><td>1日1組／温泉＋サウナ＋プール＋ジャグジー全部入り／大型犬3頭OK／公式出張シェフ提携／オーシャンビュー</td></tr>
+<tr><td>2</td><td>AMAO VILLA 伊豆高原</td><td>定員12名ジャスト／犬制限なし／ドッグラン300坪／温泉／120インチシアター</td></tr>
+<tr><td>3</td><td>AMAO VILLA 城ヶ崎</td><td>定員11名／犬制限なし／100坪人工芝ドッグラン／岩風呂温泉</td></tr>
+<tr><td>4</td><td>めりーのおうち</td><td>定員11名／2026/7/25空室○／温泉露天／ドッグラン／屋根付BBQ</td></tr>
+<tr><td>5</td><td>ホテル四季の蔵 別邸ULALA</td><td>インフィニティプール／オーシャンビュー／ドッグスパ／212㎡（8名は他棟併用要）</td></tr>
+<tr><td>6</td><td>ブレス熱海アネックス</td><td>築浅2025/12新築／デザイナーズ／サウナ＋露天＋ハンモック</td></tr>
+<tr><td>7</td><td>niko Villa LUCE＋Woody両棟</td><td>21名定員でゆとり／オーシャンビュー／ジャグジー（情報矛盾解消要）</td></tr>
+<tr><td>8</td><td>熱海レオ</td><td>16名／本格サウナ棟独立／天体観測ルーム（定員過大気味）</td></tr>
+<tr><td>9</td><td>伊豆高原プライム</td><td>定員8名ジャスト／犬2匹／温泉</td></tr>
+<tr><td>10</td><td>ISOLA伊豆高原 全棟</td><td>全棟貸切可だが18室は過大</td></tr>
+</tbody>
+</table>
+</section>
+
+<section>
+<h2><span class="num">06</span>総合おすすめ TOP5</h2>
+<p class="section-lead">条件を全体観で評価した最終推薦と、それぞれが向いている家族像。</p>
+
+<div class="villa-card top">
+<h4><span class="rank">推薦1</span>海彩テラス熱海別邸 ＋ 出張シェフプラン</h4>
+<p><strong>なぜ選んだか：</strong>1日1組オーシャンビューで、温泉＋フィンランドサウナ＋14m×4mプール＋温水ジャグジーという伊豆東海岸では稀有な「全部入り」設備。大型犬3頭OKと犬2匹要件に余裕。<strong>施設提携の出張シェフプランが公式存在</strong>で、調整工数が圧倒的に少ない。</p>
+<p><strong>向いている家族：</strong>プライバシーと希少設備（プール＋サウナ＋温泉同時）を全部欲しい多世代家族。1歳児がいるためサウナが別棟であることも合理的。</p>
+</div>
+
+<div class="villa-card top">
+<h4><span class="rank">推薦2</span>AMAO VILLA 伊豆高原（または城ヶ崎との2棟貸切）</h4>
+<p><strong>なぜ選んだか：</strong>定員12名ジャスト、犬制限なし、<strong>300坪ドッグラン</strong>という希少枠。120インチシアターは多世代エンタメに向く。城ヶ崎と組み合わせれば合計23名定員＋両方温泉＋両方ドッグランの贅沢構成。</p>
+<p><strong>向いている家族：</strong>犬2匹を思いっきり遊ばせたい家族。複数世代でリビングシアターを楽しむ層。</p>
+</div>
+
+<div class="villa-card top">
+<h4><span class="rank">推薦3</span>めりーのおうち</h4>
+<p><strong>なぜ選んだか：</strong>城ヶ崎海岸の海近、<strong>2026/7/25 空室○表記が確認できた数少ない施設</strong>。定員11名・温泉露天・ドッグラン・屋根付BBQ（雨対策完備）と隙がない。</p>
+<p><strong>向いている家族：</strong>7月下旬の天候リスクを避けたい家族。空室確定の安心感を取りたい層。</p>
+</div>
+
+<div class="villa-card">
+<h4><span class="rank">推薦4</span>ホテル四季の蔵 別邸ULALA（＋他棟併用）</h4>
+<p><strong>なぜ選んだか：</strong><strong>インフィニティプール</strong>＋オーシャンビュー＋ドッグスパという他にない設備の組合せ。別邸を複数組み合わせると8名対応可能。</p>
+<p><strong>向いている家族：</strong>設備の希少性（インフィニティプール＋ドッグスパ）を重視する層。</p>
+</div>
+
+<div class="villa-card">
+<h4><span class="rank">推薦5</span>風と森と空のヴィラ ブレス熱海 アネックス</h4>
+<p><strong>なぜ選んだか：</strong><strong>2025年12月オープン</strong>の築浅デザイナーズ。サウナ＋ハンモック付露天という独自体験。</p>
+<p><strong>向いている家族：</strong>「最新・他人がまだあまり知らない場所」を好む層。</p>
+</div>
+</section>
+
+<section>
+<h2><span class="num">07</span>LINE送信用 簡易版</h2>
+<p class="section-lead">そのままコピーしてLINEで共有可能。</p>
+<div class="line-box">
+<div class="line-box-inner">【伊豆東海岸 高級ヴィラ候補 TOP5】
+
+1. 海彩テラス熱海別邸
+料金: 未確認(要見積)
+評価: レビュー未確認
+特徴: 1日1組／温泉+サウナ+プール+ジャグジー全装備
+   ／大型犬3頭OK／出張シェフ提携あり／オーシャンビュー
+公式: https://umiiro-terrace.net/20230921152517/
+予約: https://reserve.489ban.net/client/umiiro-terrace/0/plan/availability/room
+空室未確認
+
+2. AMAO VILLA 伊豆高原
+料金: 94,500円〜(目安)
+評価: レビュー未確認
+特徴: 定員12名／犬制限なし／300坪ドッグラン
+   ／温泉／120インチシアター
+公式: https://www.amaovilla.com/amao-villa-izukogen/
+予約: https://www.ikyu.com/en-us/00051604/
+空室未確認
+
+3. めりーのおうち(城ヶ崎海岸)
+料金: 未確認(要見積)
+評価: レビュー未確認
+特徴: 定員11名／温泉露天／ドッグラン
+   ／屋根付BBQ／2026/7/25空室○
+公式: https://morinoouchi-resort.com/
+予約: https://www.jalan.net/yad378175/
+空室確認済(7/25)
+
+4. AMAO VILLA 城ヶ崎
+料金: 未確認(要見積)
+評価: レビュー未確認
+特徴: 定員11名／犬制限なし／100坪人工芝ドッグラン
+   ／天然温泉(岩風呂)
+公式: https://www.amaovilla.com/amao-villa-jogasaki/
+空室未確認
+
+5. ブレス熱海アネックス
+料金: 未確認(要見積)
+評価: レビュー未確認(2025/12新築)
+特徴: 建築家監修デザイナーズ／1日1組
+   ／サウナ+露天+ハンモック／5LDK
+公式: https://www.stagevilla.co.jp/villa/12484
+空室未確認
+
+【出張シェフ候補】
+・シェフくる(熱海要個別問合せ): https://chefkuru.jp/
+・SHAREDINE熱海(16名対応): https://sharedine.me/shizuoka/atamishi
+・海彩テラス提携プラン(摩擦最小)
+
+【重要注記】
+・1棟単体で200万円到達は伊豆東海岸では未確認
+・200万円ラインは「複数棟貸切+出張シェフ+ヘリ送迎」等の
+ パッケージ構成で組む必要あり
+・全施設のレビュー件数/評価は未取得→各予約サイト要確認
+・2026/7/25空室はめりーのおうち以外すべて未確認
+・犬2匹(中型サイズ)の同伴可否は最終問合せで要再確認</div>
+</div>
+</section>
+
+<section class="next-steps">
+<h2><span class="num">08</span>次のステップ</h2>
+<ol>
+<li><strong>海彩テラス熱海別邸</strong>に2026/7/25空室・8名定員可否・出張シェフプラン詳細（コース／料金）を電話・メールで照会</li>
+<li><strong>AMAO VILLA 伊豆高原＋城ヶ崎 2棟同時貸切</strong>の料金を本部照会（β案実現可否）</li>
+<li><strong>SHAREDINE熱海</strong>で20〜30万円帯のプレミアムシェフ2〜3名を指名見積もり</li>
+<li><strong>ヘリチャーター</strong>（名古屋⇄熱海）を組み込むかの方針決定 → 200万円ライン到達設計の鍵</li>
+<li>確認できた最終3〜5プランを猪原さんに提示</li>
+</ol>
+</section>
+
+<footer>
+本レポートは2026年5月31日時点で公式サイト・予約サイトの一次情報より作成。<br>
+2026/7/25実勢料金・空室・レビュー件数等の「未確認」項目は最終問合せで要再確認。<br>
+作成: 株式会社ルミナス／狩野 壮太
+</footer>
+
+</div>
+</body>
+</html>
